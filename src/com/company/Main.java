@@ -74,23 +74,21 @@ public class Main {
         Scanner in2 = new Scanner(System.in);
         System.out.println("Please, enter a new number");
         int l = in2.nextInt();
-        for (int i = 1; i <= l; i++) {
-            for (int j = 1; j <= l - i; j++) {
+        for (int i = 0; i <= l; i++) {
+            for (int j = 0; j <= l - i; j++) {
                 System.out.print(" ");
             }
-
-            for (int j = 1; j <= i * 2 - 1; j++) {
-                System.out.print("*");
+            for (int j = 0; j <= i; j++) {
+                System.out.print("* ");
             }
             System.out.println();
-
         }
-        for (int i = l - 1; i > 0; i--) {
-            for (int j = 1; j <= l - i; j++) {
+        for (int i = l - 1; i >= 0; i--) {
+            for (int j = 0; j <= l - i; j++) {
                 System.out.print(" ");
             }
-            for (int j = 1; j <= i * 2 - 1; j++) {
-                System.out.print("*");
+            for (int j = 0; j <= i; j++) {
+                System.out.print("* ");
             }
             System.out.println();
         }
