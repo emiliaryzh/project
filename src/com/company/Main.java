@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     static void printSquare() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please, enter a number");
+        System.out.println("Please, enter a number:");
         int num = sc.nextInt();
         for (int i = 0; i < num; i++) {
             for (int j = 0; j < num; j++) {
@@ -17,9 +17,9 @@ public class Main {
 
     static void rect() {
         Scanner in = new Scanner(System.in);
-        System.out.println("Please, enter a new number");
+        System.out.println("Please, enter a new number:");
         int length = in.nextInt();
-        System.out.println("Input second number");
+        System.out.println("Input second number:");
         int width = in.nextInt();
 
         for (int i = 0; i < length; i++) {
@@ -32,7 +32,7 @@ public class Main {
 
     static void triangle() {
         Scanner s = new Scanner(System.in);
-        System.out.println("Please, enter a new number");
+        System.out.println("Please, enter a new number:");
         int l = s.nextInt();
         for (int i = 0; i <= l; i++) {
             for (int j = i; j > 0; j--) {
@@ -44,7 +44,7 @@ public class Main {
 
     static void mirroredTriangle() {
         Scanner in = new Scanner(System.in);
-        System.out.println("Please, enter a new number");
+        System.out.println("Please, enter a new number:");
         int length = in.nextInt();
         for (int i = 0; i <= length; i++) {
             for (int j = 0; j < length - i; j++) {
@@ -59,7 +59,7 @@ public class Main {
 
     static void upsidedown() {
         Scanner in1 = new Scanner(System.in);
-        System.out.println("Please, enter a new number");
+        System.out.println("Please, enter a new number:");
         int length = in1.nextInt();
         for (int i = 0; i <= length; i++) {
             for (int j = i; j < length; j++) {
@@ -72,8 +72,9 @@ public class Main {
 
     static void rhombus() {
         Scanner in2 = new Scanner(System.in);
-        System.out.println("Please, enter a new number");
+        System.out.println("Please, enter a new number:");
         int l = in2.nextInt();
+
         for (int i = 0; i <= l; i++) {
             for (int j = 0; j <= l - i; j++) {
                 System.out.print(" ");
